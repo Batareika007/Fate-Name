@@ -1,163 +1,103 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
     <title>Shumer</title>
 </head>
 
 <body>
-
-    <header>
-
-        <h1>
-            Name of fate
-        </h1>
-    </header>
-
-
     <main class="container">
-        <section>
-            <h2>
-                добро пожаловать на шумерский проект <span>Имя судьбы</span>
-            </h2>
-
+        <header>
+            <h1>Fate Name</h1>
             <p>
-                для того чтоб получить имя судьбы, из даты рождения вычисляем <span>число судьбы</span>
+                <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button"
+                    aria-expanded="false" aria-controls="collapseExample">
+                    как найти число судьбы
+                </a>
+
             </p>
+            <div class="collapse" id="collapseExample">
+                <div class="card card-body">
+                    число судьбы это сумма всех чисел даты рождения, к примеру : <br>
+                    дата рождения : 19.01.1990 <br>
+                    1+9+0+1+1+9+9+0 = 30 --> 3+0 = 3 <br>
+                    наше число судьбы = 3
+                </div>
+            </div>
+        </header>
 
-            <p>
-                число судьбы - это сумма всех чисел даты рождения, к примеру : <br>
-                дата рождения : 19.01.1990 <br>
-                1+9+0+1+1+9+9+0 = 30 --> 3+0 = 3 <br>
-                наше число судьбы = 3
-            </p>
-            <p>
-                первая буква нашего имени судьбы начинает с одной из букв под номером 3 из следующей таблицы:
-            </p>
-        </section>
-
-
-        <!-- TABLE -->
-
-        <table class="table">
-            <thead class="thead-dark">
-                <tr>
-                    <th>1</th>
-                    <th>2</th>
-                    <th>3</th>
-                    <th>4</th>
-                    <th>5</th>
-                    <th>6</th>
-                    <th>7</th>
-                    <th>8</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>A<br></td>
-                    <td>B</td>
-                    <td>C</td>
-                    <td>D</td>
-                    <td>E</td>
-                    <td>U</td>
-                    <td>O</td>
-                    <td>F</td>
-                </tr>
-                <tr>
-                    <td>I</td>
-                    <td>C</td>
-                    <td>G</td>
-                    <td>M</td>
-                    <td>H</td>
-                    <td>V</td>
-                    <td>Z</td>
-                    <td>P</td>
-                </tr>
-                <tr>
-                    <td>J</td>
-                    <td>K</td>
-                    <td>L</td>
-                    <td>T</td>
-                    <td>N</td>
-                    <td>W</td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>Q</td>
-                    <td>R</td>
-                    <td>S</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>Y</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </tbody>
-        </table>
-
-        <p>
-            тем самым ваше имя судьбы начинается с одной из букв : C / G / L / S
-        </p>
-        <p>дальше по дате рождения каждая буква от имени: 1-9-0-1-1-9-9-0
-        </p>
-        <ul>
-            <li> 3: C / G / L / S</li>
-            <li> 1: A / I / J / Q / Y</li>
-            <li> 9: - можно выбрать абсолютно любую букву из таблицы </li>
-            <li> 0: - можно выбрать абсолютно любую букву из таблицы</li>
-            <li> 1: A / I / J / Q / Y </li>
-            <li> 1: A / I / J / Q / Y</li>
-            <li> 9: - можно выбрать абсолютно любую букву из таблицы</li>
-            <li> 9: - можно выбрать абсолютно любую букву из таблицы</li>
-            <li> 0: - можно выбрать любую гласную букву из таблицы</li>
-        </ul>
-        <p>
-            в итоге получаем имя из 9 букв: к примеру Galojaspa
-        </p>
-        <section>
-
-            <h3>
-                Калькулятор Имени
-            </h3>
-            <p>наше следующее приложение поможет вам подобрать имя путём автоматических расчетов и предложение букв</p>
-            <form>
-                <div class="form-group">
-                    <label for="birthday_date">введите дату рождения</label>
-                    <input type="date" class="form-control" id="birthday_date" aria-describedby="birthday">
+        <!-- calculator -->
+      
+        <section class="container">
+            <div class="row">
+                <div class="col-sm-1">
+                    <div class="row bg-dark bg-gradient text-white">1</div>
+                    <button class="row">A</button>
+                    <div class="row">I</div>
+                    <div class="row">Q</div>
+                    <div class="row">Y</div>
+                </div>
+                <div class="col-sm-1">
+                    <div class="row bg-secondary">2</div>
+                    <div class="row">B</div>
+                    <div class="row">C</div>
+                    <div class="row">K</div>
+                    <div class="row">R</div>
+                </div>
+                <div class="col-sm-1">
+                    <div class="row bg-secondary">3</div>
+                    <div class="row">C</div>
+                    <div class="row">G</div>
+                    <div class="row">L</div>
+                    <div class="row">S</div>
+                </div>
+                <div class="col-sm-1">
+                    <div class="row bg-secondary">4</div>
+                    <div class="row">D</div>
+                    <div class="row">M</div>
+                    <div class="row">T</div>
+                </div>
+                <div class="col-sm-1">
+                    <div class="row bg-secondary">5</div>
+                    <div class="row">E</div>
+                    <div class="row">H</div>
+                    <div class="row">N</div>
 
                 </div>
-
-                <button type="submit" class="btn btn-primary">начать вычисление</button>
-            </form>
+                <div class="col-sm-1">
+                    <div class="row bg-secondary">6</div>
+                    <div class="row">U</div>
+                    <div class="row">V</div>
+                    <div class="row">W</div>
+                </div>
+                <div class="col-sm-1">
+                    <div class="row bg-secondary">7</div>
+                    <div class="row">O</div>
+                    <div class="row">Z</div>
+                </div>
+                <div class="col-sm-1">
+                    <div class="row bg-secondary">8</div>
+                    <div class="row">F</div>
+                    <div class="row">P</div>
+                </div>
+            </div>
         </section>
+
+
     </main>
-    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
+    </script>
 
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
-    </script>
 </body>
 
 </html>
